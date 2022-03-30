@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "/Users/tyler/Documents/KIT205/Assignment/Assignment1/Project2/Project2",
+      "environment": [],
+      "program": "/Users/tyler/Documents/KIT205/Assignment/Assignment1/Project2/Project2/build/Debug/outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "externalConsole": false
+    }
+  ]
+}
