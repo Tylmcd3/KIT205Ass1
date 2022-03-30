@@ -18,5 +18,5 @@ void print_list(UnitList* self);
 void insert_in_order(UnitList* self, String data);
 void delete_from_list(UnitList* self, String data);
 void destroy_list(UnitList* self);
-void
-enrol_student(UnitList* self, String unit, long id);
+void enrol_student(UnitList* self, String unit, long id);
+void unenrol_student(UnitList* self, String unit, long id);

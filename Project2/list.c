@@ -116,3 +116,26 @@ void enrol_student(UnitList* self, String unit, long id) {
 	}
 
 }
+
+void unenrol_student(UnitList* self, String unit, long id) {
+	ListNodePtr current = self->head;
+	ListNodePtr prev = NULL;
+
+	String string = malloc((strlen(unit) * sizeof * string) + 1);
+	strcpy(string, unit);
+
+
+	while (current != NULL && !strcmp(current->unit_code, string)) {
+		prev = current;
+		current = current->next;
+	}
+
+	if (current != NULL) {
+		delete_bst(&(current->students), id);
+	}
+	else {
+		printf("The Unit doesnt exist, please check the unit code and try again.\n");
+	}
+}
+
+int

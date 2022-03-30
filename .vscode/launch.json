@@ -7,11 +7,11 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": true,
-      "cwd": "/Users/tyler/Documents/KIT205/Assignment/Assignment1/Project2/Project2",
+      "cwd": "/Users/tyler/Library/CloudStorage/OneDrive-UniversityofTasmania/Shared Uni Stuff/Uni/Year 2/Sem2/KIT205/Assignments/Assignment 1/Project2",
       "environment": [],
-      "program": "/Users/tyler/Documents/KIT205/Assignment/Assignment1/Project2/Project2/build/Debug/outDebug",
+      "program": "/Users/tyler/Library/CloudStorage/OneDrive-UniversityofTasmania/Shared Uni Stuff/Uni/Year 2/Sem2/KIT205/Assignments/Assignment 1/Project2/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
-      "MIMode": "gdb",
+      "MIMode": "lldb",
       "externalConsole": false
     }
   ]
