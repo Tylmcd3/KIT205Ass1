@@ -39,11 +39,11 @@ int main() {
 			unenrol_student(&units, buffer, id);
 			break;
 		case 5:
-			printf("Enter the Unit code: \n");
-			scanf("%s", buffer);
-			insert_in_order(&units, buffer);
+			unit_summary(&units, buffer);
 			break;
-
+		case 6:
+			//print_students()
+			break;
 
 
 		}

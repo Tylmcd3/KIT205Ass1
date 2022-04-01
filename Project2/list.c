@@ -35,7 +35,7 @@ void insert_in_order(UnitList* self, String data) {
 	new_node->unit_code = string;
 	new_node->next = NULL;
 
-	while (current != NULL && current->unit_code < data) {
+	while (current != NULL && strcmp(current->unit_code, data) < 0) {
 		prev = current;
 		current = current->next;
 	}
@@ -95,21 +95,26 @@ void destroy_list(UnitList* self) {
 	self->head = NULL;
 }
 
-void enrol_student(UnitList* self, String unit, long id) {
+ListNodePtr find_node(UnitList *self, String unit){
 	ListNodePtr current = self->head;
 	ListNodePtr prev = NULL;
 
-	String string = malloc((strlen(unit) * sizeof * string) + 1);
-	strcpy(string, unit);
 
-
-	while (current != NULL && !strcmp(current->unit_code, string)) {
+	while (current != NULL && strcmp(current->unit_code, unit) != 0) {
 		prev = current;
 		current = current->next;
 	}
 
-	if (current != NULL) {
-		insert_bst(&(current->students), id);
+	return current;
+
+
+}
+
+void enrol_student(UnitList* self, String unit, long id) {
+	ListNodePtr node = find_node(self, unit);
+
+	if (node != NULL) {
+		insert_bst(&(node->students), id);
 	}
 	else {
 		printf("The Unit doesnt exist, please check the unit code and try again.\n");
@@ -118,24 +123,23 @@ void enrol_student(UnitList* self, String unit, long id) {
 }
 
 void unenrol_student(UnitList* self, String unit, long id) {
-	ListNodePtr current = self->head;
-	ListNodePtr prev = NULL;
+	ListNodePtr node = find_node(self, unit);
 
-	String string = malloc((strlen(unit) * sizeof * string) + 1);
-	strcpy(string, unit);
-
-
-	while (current != NULL && !strcmp(current->unit_code, string)) {
-		prev = current;
-		current = current->next;
-	}
-
-	if (current != NULL) {
-		delete_bst(&(current->students), id);
+	if (node != NULL) {
+		delete_bst(&(node->students), id);
 	}
 	else {
 		printf("The Unit doesnt exist, please check the unit code and try again.\n");
 	}
 }
 
-int
+void unit_summary(UnitList* self, String unit){
+	ListNodePtr current = self->head;
+	ListNodePtr prev = NULL;
+
+	while (current != NULL) {
+		printf("\n%s: %d\n", current->unit_code, count_bst(&current->students));
+		prev = current;
+		current = current->next;
+	}
+}

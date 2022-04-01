@@ -20,3 +20,4 @@ void delete_from_list(UnitList* self, String data);
 void destroy_list(UnitList* self);
 void enrol_student(UnitList* self, String unit, long id);
 void unenrol_student(UnitList* self, String unit, long id);
+void unit_summary(UnitList* self, String unit);

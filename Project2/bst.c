@@ -88,7 +88,7 @@ StudentBST new_bst() {
 void print_pre_order_bst_node(BSTNodePtr self) {
     if (self != NULL) {
         printf("(");
-        printf(" %d ", self->student_id);
+        printf("%ld", self->student_id);
         print_pre_order_bst_node(self->left);
         print_pre_order_bst_node(self->right);
         printf(")");
@@ -105,7 +105,7 @@ void print_in_order_bst_node(BSTNodePtr self) {
     if (self != NULL) {
         printf("(");
         print_in_order_bst_node(self->left);
-        printf(" %d ", self->student_id);
+        printf(" %ld ", self->student_id);
         print_in_order_bst_node(self->right);
         printf(")");
     }
@@ -122,7 +122,7 @@ void print_post_order_bst_node(BSTNodePtr self) {
         printf("(");
         print_post_order_bst_node(self->left);
         print_post_order_bst_node(self->right);
-        printf(" %d ", self->student_id);
+        printf(" %ld ", self->student_id);
         printf(")");
     }
     else {
@@ -176,3 +176,20 @@ void destroy_bst(StudentBST* self) {
     destroy_bst_node(self->root);
 }
 
+int count_bst_node(BSTNodePtr self){
+    int total;
+    if(self != NULL){
+        total = 1;
+        if (self->left != NULL) 
+            total += count_bst_node(self->left);
+        if (self->right != NULL) 
+            total += count_bst_node(self->right);
+    }
+        if(total)
+            return total;
+        else
+            return 0;
+}
+int count_bst(StudentBST *self){
+    return count_bst_node(self->root);
+}

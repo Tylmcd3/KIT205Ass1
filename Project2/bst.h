@@ -21,3 +21,5 @@ void print_in_order_bst(StudentBST* self);
 void print_post_order_bst(StudentBST* self);
 int height_of_bst(StudentBST* self);
 void destroy_bst(StudentBST* self);
+int count_bst(StudentBST *self);
+
