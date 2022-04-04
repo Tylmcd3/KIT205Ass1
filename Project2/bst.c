@@ -96,9 +96,11 @@ void print_pre_order_bst_node(BSTNodePtr self) {
     else {
         printf("_");
     }
+    
 }
 void print_pre_order_bst(StudentBST* self) {
     print_pre_order_bst_node(self->root);
+    printf("\n");
 }
 
 void print_in_order_bst_node(BSTNodePtr self) {
@@ -112,9 +114,11 @@ void print_in_order_bst_node(BSTNodePtr self) {
     else {
         printf("_");
     }
+    
 }
 void print_in_order_bst(StudentBST* self) {
     print_in_order_bst_node(self->root);
+    printf("\n");
 }
 
 void print_post_order_bst_node(BSTNodePtr self) {
@@ -128,9 +132,11 @@ void print_post_order_bst_node(BSTNodePtr self) {
     else {
         printf("_");
     }
+    
 }
 void print_post_order_bst(StudentBST* self) {
     print_post_order_bst_node(self->root);
+    printf("\n");
 }
 
 int height_of_bst_node(BSTNodePtr self) {

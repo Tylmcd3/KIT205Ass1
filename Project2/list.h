@@ -21,3 +21,4 @@ void destroy_list(UnitList* self);
 void enrol_student(UnitList* self, String unit, long id);
 void unenrol_student(UnitList* self, String unit, long id);
 void unit_summary(UnitList* self, String unit);
+void print_students(UnitList* self, String unit);

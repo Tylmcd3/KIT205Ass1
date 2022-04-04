@@ -143,3 +143,36 @@ void unit_summary(UnitList* self, String unit){
 		current = current->next;
 	}
 }
+
+void print_students(UnitList* self, String unit) {
+	ListNodePtr current = self->head;
+	ListNodePtr prev = NULL;
+
+	StudentBST tree;
+
+	while (current != NULL && strcmp(current->unit_code, unit)!= 0)  {
+		prev = current;
+		current = current->next;
+	}
+	if (current != NULL) {
+		tree = current->students;
+		print_in_order_bst(&tree);
+	}
+	else {
+		printf("Invalid Unit Code");
+	}
+	
+}
+
+void find_student_classes(UnitList* self, long id) {
+	ListNodePtr current = self->head;
+	ListNodePtr prev = NULL;
+	printf("The courses student %ld is enrolled in are:\n", id);
+	while (current != NULL) {
+		if (find_bst(&(current->students), id))
+			printf("%s\n", current->unit_code);
+		prev = current;
+		current = current->next;
+	}
+	printf("\n");
+}
