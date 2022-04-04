@@ -11,7 +11,7 @@ int main() {
 	String buffer[MAX_SIZE];
 	long id;
 	while (selection) {
-		printf("Make a selection\n1.Add unit\n2.Remove unit\n3.Enrol student in a unit\n4.Un-enrol student from a unit\n5.Print units with the total students in each unit\n6.Print all students enrolled in a unit\n7.Print an ordered list of units that a specific student is enrolled in\n");
+		printf("Make a selection\n1.Add unit\n2.Remove unit\n3.Enrol student in a unit\n4.Un-enrol student from a unit\n5.Print units with the total students in each unit\n6.Print all students enrolled in a unit\n7.Print an ordered list of units that a specific student is enrolled in\n0.Quit\n");
 		scanf("%d",&selection);
 		switch (selection) {
 		case 1:
@@ -47,11 +47,12 @@ int main() {
 			print_students(&units, buffer);
 			break;
 		case 7:
-			printf("Enter the Student ID to their enrolled classes");
+			printf("Enter the Student ID to their enrolled classes: ");
 			scanf("%ld", &id);
-			find_student_classes( )
-
+			find_student_classes(&units, id);
+			break;
 		}
 	}
-	printf("Test");
+	printf("\nThank you\n");
+	return 0;
 }

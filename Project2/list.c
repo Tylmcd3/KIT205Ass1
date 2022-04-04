@@ -167,7 +167,7 @@ void print_students(UnitList* self, String unit) {
 void find_student_classes(UnitList* self, long id) {
 	ListNodePtr current = self->head;
 	ListNodePtr prev = NULL;
-	printf("The courses student %ld is enrolled in are:\n", id);
+	printf("\n----------------------------------------------\nThe courses student %ld is enrolled in are:\n", id);
 	while (current != NULL) {
 		if (find_bst(&(current->students), id))
 			printf("%s\n", current->unit_code);
