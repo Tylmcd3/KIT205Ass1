@@ -27,9 +27,9 @@ void print_list(UnitList* self) {
 void insert_in_order(UnitList* self, String data) {
 	ListNodePtr current = self->head;
 	ListNodePtr prev = NULL;
-	ListNodePtr new_node = malloc(sizeof * new_node);
+	ListNodePtr new_node = malloc(sizeof *new_node);
 	String string = malloc((strlen(data) * sizeof * string) + 1);
-	strcpy(string, data);
+	strcpy_s(string, strlen(data) + 1, data);
 
 	new_node->students = new_bst();
 	new_node->unit_code = string;
