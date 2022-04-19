@@ -1,6 +1,4 @@
-﻿  bst.c
-  list.c
-  main.c
+﻿  main.c
 C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(19,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'String *'
 C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(19,12): message : this argument is used by a conversion specifier
 C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(20,34): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
@@ -9,19 +7,18 @@ C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(24,12): warning C
 C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(24,12): message : this argument is used by a conversion specifier
 C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(25,35): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
 C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(25,29): warning C4024: 'delete_from_list': different types for formal and actual parameter 2
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(29,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'String *'
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(29,12): message : this argument is used by a conversion specifier
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(32,32): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(32,26): warning C4024: 'enrol_student': different types for formal and actual parameter 2
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(36,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'String *'
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(36,12): message : this argument is used by a conversion specifier
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(39,34): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(39,28): warning C4024: 'unenrol_student': different types for formal and actual parameter 2
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(42,31): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(42,25): warning C4024: 'unit_summary': different types for formal and actual parameter 2
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(46,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'String *'
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(46,12): message : this argument is used by a conversion specifier
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(47,33): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
-C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(47,27): warning C4024: 'print_students': different types for formal and actual parameter 2
-  Generating Code...
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(31,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'String *'
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(31,12): message : this argument is used by a conversion specifier
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(33,32): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(33,26): warning C4024: 'enrol_student': different types for formal and actual parameter 2
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(39,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'String *'
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(39,12): message : this argument is used by a conversion specifier
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(41,34): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(41,28): warning C4024: 'unenrol_student': different types for formal and actual parameter 2
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(44,31): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(44,25): warning C4024: 'unit_summary': different types for formal and actual parameter 2
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(48,12): warning C4477: 'scanf_s' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'String *'
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(48,12): message : this argument is used by a conversion specifier
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(49,33): warning C4047: 'function': 'String' differs in levels of indirection from 'String [100]'
+C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\Project2\main.c(49,27): warning C4024: 'print_students': different types for formal and actual parameter 2
   Project2.vcxproj -> C:\Users\tyler\source\repos\Tylmcd3\KIT205Ass1\x64\Debug\Project2.exe

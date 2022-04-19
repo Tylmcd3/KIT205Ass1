@@ -25,17 +25,19 @@ int main() {
 			delete_from_list(&units, buffer);
 			break;
 		case 3:
-			printf("Enter the Unit code: \n");
-			scanf_s("%s", buffer, MAX_SIZE);
 			printf("Enter the Student ID to enter: \n");
 			scanf_s("%ld", &id);
+			printf("Enter the Unit code: \n");
+			scanf_s("%s", buffer, MAX_SIZE);
+			
 			enrol_student(&units, buffer, id);
 			break;
 		case 4:
-			printf("Enter the Unit code: \n");
-			scanf_s("%s", buffer, MAX_SIZE);
 			printf("Enter the Student ID to remove: \n");
 			scanf_s("%ld", &id);
+			printf("Enter the Unit code: \n");
+			scanf_s("%s", buffer, MAX_SIZE);
+			
 			unenrol_student(&units, buffer, id);
 			break;
 		case 5:

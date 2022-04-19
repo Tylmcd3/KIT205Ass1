@@ -35,5 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="unit_print_test.txt" />
+    <Text Include="input1.txt" />
+    <Text Include="input2.txt" />
   </ItemGroup>
 </Project>
